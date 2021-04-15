@@ -1,0 +1,80 @@
+/* main style */
+body{
+  font-family: 'PT Sans', sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #000000;
+}
+a{
+  text-decoration: none;
+  font-weight: bold;
+  color: #000000;
+}
+ul{
+  list-style: none;
+  padding: 0;
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* header */
+.main-header{
+  text-align: center;
+  background-image: url(../img/header-bg.jpg);
+  background-repeat: no-repeat;
+}
+.main-header p{
+  margin: 35px 0;
+}
+.header-logo{
+  margin-top: 75px;
+  margin-bottom: 145px;
+}
+.main-navigation{
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.site-navigation{
+  display: flex;
+}
+.site-navigation a{
+  padding: 20px 70px;
+}
+.main-header-logo{
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+/* features */
+.index-colums{
+  display: flex;
+  flex-wrap: wrap;
+}
+.features-item{
+  width: 400px;
+  min-height: 250px;
+  background-color: #eeeeee;
+  text-align: center;
+  padding: 30px 0;
+  box-sizing: border-box;
+}
+.features-image{
+  overflow: hidden;
+}
+.features-image img{
+  width: auto;
+  height: 100%;
+}
+/* recommendation */
+.recommendation{
+  display: flex;
+}
+.recommendation-list{
+  box-sizing: border-box;
+  text-align: center;
+  padding: 55px 65px;
+}
