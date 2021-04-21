@@ -36,8 +36,8 @@
   <main class="features container">
     <div class="index-colums">
       <section class="features-item">
-        <h2>Настоящий <br>
-          городок</h2>
+        <h3>Настоящий <br>
+          городок</h3>
         <p>№1</p>
         <p>Седона - не аттракцион для туристов,<br>
           там течет своя жизнь</p>
@@ -51,7 +51,7 @@
       <ul class="recommendation-list">
         <li><img src="img/icon1.png" alt="Иконка домик"></li>
         <li>
-          <h2>Жилье</h2>
+          <h3>Жилье</h3>
         </li>
         <li>
           <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -60,7 +60,7 @@
       <ul class="recommendation-list">
         <li><img src="img/icon2.png" alt="Иконка гамбургер"></li>
         <li>
-          <h2>Еда</h2>
+          <h3>Еда</h3>
         </li>
         <li>
           <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
@@ -69,7 +69,7 @@
       <ul class="recommendation-list">
         <li><img src="img/icon3.png" alt="Иконка подарок"></li>
         <li>
-          <h2>Сумениры</h2>
+          <h3>Сумениры</h3>
         </li>
         <li>
           <p>Не только китайского, но и местного производства!</p>
@@ -83,42 +83,99 @@
       </section>
 
       <section class="features-item">
-        <h2>Там есть <br>
-          мост дьявола</h2>
+        <h3>Там есть <br>
+          мост дьявола</h3>
         <p>№2</p>
         <p>Да, по нему можно пройти! Если кончно <br>
           вы осмелитесь</p>
       </section>
 
       <section class="features-item">
-        <h2>Небольшая <br>
-          площадь</h2>
+        <h3>Небольшая <br>
+          площадь</h3>
         <p>№3</p>
         <p>Все достопримечательности<br>
           находятся очень близко</p>
       </section>
 
       <section class="features-item">
-        <h2>Красивая <br>
-          дорога</h2>
+        <h3>Красивая <br>
+          дорога</h3>
         <p>№4</p>
         <p>Ехать в Седону из Лас-Вегаса совсем <br>
           не скучно!</p>
       </section>
 
       <section class="features-item">
-        <h2>Мало <br>
-          туристов</h2>
+        <h3>Мало <br>
+          туристов</h3>
         <p>№5</p>
         <p>Большинство едет в Гранд Каньон<br>
           и толпится там</p>
       </section>
-
     </div>
   </main>
 
+  <section class="appointment">
+    <h2>Заинтересовались?</h2>
+    <p>
+      Укажите предполагаемые даты поездки, <br>
+      и мы покажем вам лучшие предложения гостиниц в Седоне
+    </p>
+
+    <div class="appointment-wrap">
+      <div class="form-header">
+        <h3>Поиск гостиницы в Седоне</h3>
+      </div>
+
+      <form class="form" action="#" method="POST">
+        <p class="form-item">
+          <label for="form-date-in">Дата заезда:</label>
+          <input type="date" id="form-date-in" name="date-in" value="2017-10-08">
+        </p>
+
+        <p class="form-item">
+          <label for="form-date-out">Дата выезда:</label>
+          <input type="date" id="form-date-out" name="date-out" value="2017-10-08">
+        </p>
+
+        <p class="form-item">
+          <span>
+            <label class="form-lable-number" for="">Взрослые:</label>
+            <button class="form-button form-button-minus"></button>
+            <input type="number" step="1" min="1" max="" value="1">
+            <button class="form-button form-button-plus"></button>
+          </span>
+
+          <span>
+            <label class="form-lable-number" for="">Дети:</label>
+            <button class="form-button form-button-minus"></button>
+            <input type="number" step="1" min="1" max="" value="1">
+            <button class="form-button form-button-plus"></button>
+          </span>
+
+        </p>
+
+      </form>
+    </div>
 
 
+
+
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22024.544423353258!2d-111.80551639258705!3d34.85702844904017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1618997404940!5m2!1sru!2sru"
+      width="100%" height="750" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+  </section>
+
+
+
+
+  <!-- <button onclick="document.getElementById('test').value=--value">-</button>
+  <input id="test" type="number" step="1" min="1" max="" name="quantity_12730" value="1">
+  <button onclick="document.getElementById('test').value=++value">+</button>
+ -->
 
 </body>
 
