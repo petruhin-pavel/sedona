@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/form.css">
+</head>
+
+<body>
+  <div class="appointmentWrap">
+    <div class="formHeader">
+      <h3>Поиск гостиницы в Седоне</h3>
+    </div>
+
+    <form action="#" method="POST">
+      <p class="formItem">
+        <label for="form-date-in">Дата заезда:</label>
+        <input type="date" id="form-date-in" name="date-in" value="2017-10-08">
+      </p>
+
+      <p class="formItem">
+        <label for="form-date-out">Дата выезда:</label>
+        <input type="date" id="form-date-out" name="date-out" value="2017-10-08">
+      </p>
+
+      <p class="formItem">
+        <label for="adults">Взрослые:</label>
+        <button class="button"></button>
+        <input id="adults" type="number" step="1" min="1" max="" value="1">
+        <button class="button button_plus"></button>
+      </p>
+
+      <p class="formItem">
+        <label for="children">Дети:</label>
+        <button class="button"></button>
+        <input id="children" type="number" step="1" min="1" max="" value="1">
+        <button class="button button_plus"></button>
+      </p>
+    </form>
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+body{
+  text-transform: uppercase;
+  font-size: 16px;
+   font-family: 'PT Sans', sans-serif;
+}
+
+.appointmentWrap{
+  height: 480px;
+  width: 570px;
+  border: 1px solid red;
+  background-color: #ffffff;
+}
+.formHeader{
+  background-color: #81b3d2;
+  text-align: center;
+}
+.formHeader h3{
+  margin: 0;
+  padding: 34px 0;
+  color: #ffffff;
+  font-size: 21px;
+}
+
+form{
+  padding: 0 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+/* form p{
+  align-items: center;
+} */
+
+form p:nth-child(-n+2){
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input{
+  font: inherit;
+  border: none;
+}
+
+input:focus{
+  outline: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator{
+  opacity: 0;
+}
+
+input[type="date"]{
+  flex-grow: 0.9;
+  background: url(../img/Calendar.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+input[type="number"]{
+  width: 60px;
+  text-align: center;
+}
+
+.button{
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border: 1px solid red;
+  /* border: none; */
+  position: relative;
+}
+
+.button::before{
+  content:'';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 11px;
+  height: 3px;
+  background-color: #a9a9a9;
+}
+
+.button_plus::after{
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 11px;
+  background-color: #a9a9a9;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
