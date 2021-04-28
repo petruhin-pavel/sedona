@@ -4,6 +4,16 @@ body{
    font-family: 'PT Sans', sans-serif;
 }
 
+button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+button:focus{
+  outline: none;
+}
+
 .appointmentWrap{
   height: 480px;
   width: 570px;
@@ -11,8 +21,13 @@ body{
   background-color: #ffffff;
 }
 .formHeader{
+  display: block;
+  width: 100%;
   background-color: #81b3d2;
   text-align: center;
+  font-style: inherit;
+  text-transform: uppercase;
+  font-size: inherit;
 }
 .formHeader h3{
   margin: 0;
@@ -20,7 +35,9 @@ body{
   color: #ffffff;
   font-size: 21px;
 }
-
+.formHeader:active .formHeader_text{
+  opacity: 0.5;
+}
 form{
   padding: 0 60px;
   display: flex;
@@ -29,15 +46,14 @@ form{
   font-weight: bold;
 }
 
-/* form p{
+form p{
+  display: flex;
   align-items: center;
-} */
+}
 
 form p:nth-child(-n+2){
   width: 100%;
-  display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 input{
@@ -52,29 +68,28 @@ input:focus{
 input[type="date"]::-webkit-calendar-picker-indicator{
   opacity: 0;
 }
-
 input[type="date"]{
   flex-grow: 0.9;
   background: url(../img/Calendar.png);
   background-repeat: no-repeat;
   background-position: center right;
 }
-
 input[type="number"]{
   width: 60px;
   text-align: center;
 }
-
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
 .button{
-  padding: 0;
+  
   width: 20px;
   height: 20px;
-  background: transparent;
-  border: 1px solid red;
-  /* border: none; */
   position: relative;
 }
-
 .button::before{
   content:'';
   position: absolute;
@@ -85,7 +100,6 @@ input[type="number"]{
   height: 3px;
   background-color: #a9a9a9;
 }
-
 .button_plus::after{
   content: '';
   position: absolute;
@@ -96,5 +110,20 @@ input[type="number"]{
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.button:hover::before,
+.button:hover::after{
+  background-color: #000;
+}
+.button:active::before,
+.button:active::after{
+  background-color: #81b3d2;
+}
 
+.button:focus::before,
+.button:focus::after{
+  background-color: #81b3d2;  
+}
 
+.mr30{
+  margin-right: 30px;
+}

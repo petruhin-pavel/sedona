@@ -12,9 +12,9 @@
 
 <body>
   <div class="appointmentWrap">
-    <div class="formHeader">
-      <h3>Поиск гостиницы в Седоне</h3>
-    </div>
+    <button class="formHeader">
+      <h3 class="formHeader_text">Поиск гостиницы в Седоне</h3>
+    </button>
 
     <form action="#" method="POST">
       <p class="formItem">
@@ -28,17 +28,17 @@
       </p>
 
       <p class="formItem">
-        <label for="adults">Взрослые:</label>
-        <button class="button"></button>
+        <label class="mr30" for="adults">Взрослые:</label>
+        <button class="button" id="adults-minus"></button>
         <input id="adults" type="number" step="1" min="1" max="" value="1">
-        <button class="button button_plus"></button>
+        <button class="button button_plus" id="adults-plus"></button>
       </p>
 
       <p class="formItem">
-        <label for="children">Дети:</label>
-        <button class="button"></button>
+        <label class="mr30" for="children">Дети:</label>
+        <button class="button" id="children-minus"></button>
         <input id="children" type="number" step="1" min="1" max="" value="1">
-        <button class="button button_plus"></button>
+        <button class="button button_plus" id="children-plus"></button>
       </p>
     </form>
 
