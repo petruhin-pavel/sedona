@@ -11,6 +11,7 @@
 </head>
 
 <body>
+
   <div class="appointmentWrap">
     <button class="formHeader">
       <h3 class="formHeader_text">Поиск гостиницы в Седоне</h3>
@@ -19,12 +20,12 @@
     <form action="#" method="POST">
       <p class="formItem">
         <label for="form-date-in">Дата заезда:</label>
-        <input type="date" id="form-date-in" name="date-in" value="2017-10-08">
+        <input type="date" required id="form-date-in" name="date-in" value="2017-10-08">
       </p>
 
       <p class="formItem">
         <label for="form-date-out">Дата выезда:</label>
-        <input type="date" id="form-date-out" name="date-out" value="2017-10-08">
+        <input type="date" required id="form-date-out" name="date-out" value="2017-10-08">
       </p>
 
       <p class="formItem">
@@ -43,6 +44,7 @@
     </form>
 
   </div>
+  <script src="./js/form.js"></script>
 </body>
 
 </html>

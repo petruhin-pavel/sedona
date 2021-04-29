@@ -98,93 +98,19 @@ h3{
 .appointment h2{
   font-size: 30px;
 }
-.appointment-wrap{
+.appointment p{
+  position: relative;
+  z-index: 1;
+}
+
+.appointmentWrap{
   position: absolute;
-  top: 200px;
+  z-index: 2;
   left: 50%;
   transform: translateX(-50%);
-  height: 480px;
-  width: 570px;
-  background-color: #fff;
+  top: 160px;
 }
-
-
-
-/* form */
-.form-header{
-  background-color: #81b3d2;
-  color: #fff;
-  text-align: center;
+.map{
+  position: relative;
+  top: -33px;
 }
-.form-header h3{
-  padding: 35px 0;
-  margin: 0;
-}
-
-.form{
-  margin: 0 54px;
-  text-align: left;
-}
-
-.form-item{
-  margin: 54px 0;
-  display: flex;
-  justify-content: space-between;
-}
-
-.form-item label{
-  font-weight: 700;
-}
-.form-item input{
-  border: none;
-  font: inherit;
-  font-weight: 700;
-  box-sizing: border-box;
-}
-
-.form-item input[type="date"]{
-  flex-grow: 1;
-  background: url(../img/Calendar.png);
-  background-repeat: no-repeat;
-  background-position: right;
-  margin-left: 27px;
-}
-
-.form-lable-number{
-  margin-right: 40px;
-}
-
-.form-button-minus{
-  background: url(../img/minus.png) 100% 100% no-repeat;
-}
-.form-button-plus{
-  background: url(../img/plus.png);
-}
-.form-button{
-  width: 14px;
-  height: 14px;
-  border: none;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 0;
-  cursor: pointer;
-}
-
-
-input[type="date"]::-webkit-calendar-picker-indicator{
-  opacity: 0;
-}
-
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-input[type="number"]{
-  width: 60px;
-  text-align: center;
-}
-/* ======= */
-
-
-
