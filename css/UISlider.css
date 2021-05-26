@@ -1,0 +1,77 @@
+.priceFilter_container * {
+    box-sizing: border-box;
+    outline: none;
+}
+.priceFilter_container {
+    width: 320px;
+    background-color: gray;
+    padding: 35px;
+    text-align: center;
+}
+.priceFilter_container .ui-slider {
+    position: relative;
+    background: #447357;
+    height: 2px;
+}
+.priceFilter_container .ui-slider .ui-slider-handle {
+    position: absolute;
+    margin-left: -10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 8px solid #FFF;
+    top: -10px;
+    background: #ababab;
+    z-index: 2;
+}
+.priceInput_container{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  height: 32px;
+}
+.priceInput_container::after{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 2px;
+  height: 22px;
+  background-color: #000000;
+  top: 50%;
+  left: 50%;
+  margin-top: -11px;
+  margin-left: -1px;
+}
+.priceFilter-input-left,
+.priceFilter-input-right {
+    border: none;
+    text-align:center;
+    width: 45%;
+}
+.priceFilter_container .ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    height: 2px;
+    border: 0;
+    background: #00ca74;
+}
+.priceFilter{
+  margin-top: 22px;
+}
+.priceFilter-button{
+  width: 133px;
+  height: 32px;
+  border: none;
+  background-color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 34px;
+  cursor: pointer;
+}
+.priceFilter-title{
+  text-transform: uppercase;
+  color: #fff;
+  text-align: left;
+}
