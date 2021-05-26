@@ -4,8 +4,6 @@
 }
 .priceFilter_container {
     width: 320px;
-    background-color: gray;
-    padding: 35px;
     text-align: center;
 }
 .priceFilter_container .ui-slider {

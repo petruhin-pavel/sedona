@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>СЕДОНА - ВЫБОР ОТЕЛЯ</title>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/hotels.css">
+  <link rel="stylesheet" href="./css/checkbox.css">
+  <link rel="stylesheet" href="./css/UISlider.css">
+</head>
+
+<body>
+  <header class="main-header container">
+    <nav class="main-navigation">
+      <ul class="site-navigation">
+        <li><a href="#">Информация</a></li>
+        <li><a href="#">Фото и видео</a></li>
+      </ul>
+      <a href="#" class="main-header-logo">
+        <img src="img/Logo.png" alt="Логотип городка Седона">
+      </a>
+      <ul class="site-navigation">
+        <li><a href="#">Карта штата</a></li>
+        <li><a href="#">Гостиницы</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="filter container">
+    <form class="serch">
+      <div class="filter-wrap">
+        <div class="serch-wrap">
+          <h3 class="serch-title">
+            Инфраструктура:
+          </h3>
+          <p class="serch-item">
+            <label class="serch-сheckbox">
+              <input class="visually-hidden" type="checkbox" name="pool">
+              <span class="checkbox-indicator"></span>
+              Бассейн
+            </label>
+          </p>
+          <p class="serch-item">
+            <label class="serch-сheckbox">
+              <input class="visually-hidden" type="checkbox" name="parking">
+              <span class="checkbox-indicator"></span>
+              Парковка
+            </label>
+          </p>
+          <p class="serch-item">
+            <label class="serch-сheckbox">
+              <input class="visually-hidden" type="checkbox" name="wi-fi">
+              <span class="checkbox-indicator"></span>
+              wi-fi
+            </label>
+          </p>
+        </div>
+        <div class="serch-wrap">
+          <h3 class="serch-title">
+            Тип жилья:
+          </h3>
+          <p class="serch-item">
+            <label class="serch-сheckbox">
+              <input class="visually-hidden" type="checkbox" name="hotel">
+              <span class="checkbox-indicator"></span>
+              Гостиница
+            </label>
+          </p>
+          <p class="serch-item">
+            <label class="serch-сheckbox">
+              <input class="visually-hidden" type="checkbox" name="motel">
+              <span class="checkbox-indicator"></span>
+              Мотель
+            </label>
+          </p>
+          <p class="serch-item">
+            <label class="serch-сheckbox">
+              <input class="visually-hidden" type="checkbox" name="apartments">
+              <span class="checkbox-indicator"></span>
+              Апартаменты
+            </label>
+          </p>
+        </div>
+      </div>
+
+      <div class="filter-wrap">
+        <div class="priceFilter_container">
+          <p class="priceFilter-title">Стоимость в сутки (р):</p>
+          <div class="priceInput_container">
+            <input type="text" class="priceFilter-input-left" />
+            <input type="text" class="priceFilter-input-right" />
+          </div>
+          <div class="priceFilter"></div>
+          <button class="priceFilter-button">Найти</button>
+        </div>
+      </div>
+
+
+    </form>
+  </section>
+
+
+
+  <section class="footer container">
+    <div class="contacts">
+      <p>
+        #Visitsedona
+      </p>
+      <a href="tel: +74956660266">+7(495)666-02-66</a>
+    </div>
+    <div class="developer">
+      <p>
+        Website by <br> ilbuild
+      </p>
+    </div>
+  </section>
+
+  <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./js/jquery-ui.min.js"></script>
+  <script src="./js/jquery.ui.touch-punch.min.js"></script>
+  <script src="./js/UISlider.js"></script>
+</body>
+
+</html>
