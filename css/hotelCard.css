@@ -1,0 +1,71 @@
+.btn{
+  display: inline-block;
+  color: #fff;
+  background-color: #81b3d2;
+  padding: 8px 17px;
+}
+.rating{
+  display: inline-block;
+  color: #666666;
+  background-color: #81b3d2;
+  padding: 8px 17px;
+}
+
+.hotel-card{
+  display: flex;
+  margin: 30px 0;
+}
+.description-title{
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+.card-description{
+  margin-left: 30px;
+}
+.card-rating{
+  margin-left: auto;
+}
+.description-cost{
+  margin-left: 39px;
+}
+.description-btn{
+  margin-top: 18px;
+}
+.rating{
+  margin-top: 47px;
+}
+
+.stars{
+  height: 18px;
+  width: 114px;
+  margin-left: auto;
+}
+.stars__5{
+  background: url(../img/star.png) 96px 0px no-repeat,
+              url(../img/star.png) 72px 0px no-repeat,
+              url(../img/star.png) 48px 0px no-repeat,
+              url(../img/star.png) 24px 0px no-repeat,
+              url(../img/star.png) 0px 0px no-repeat;
+}
+.stars__4{
+  background: url(../img/star.png) 96px 0px no-repeat,
+              url(../img/star.png) 72px 0px no-repeat,
+              url(../img/star.png) 48px 0px no-repeat,
+              url(../img/star.png) 24px 0px no-repeat;
+}
+.stars__3{
+  background: url(../img/star.png) 96px 0px no-repeat,
+              url(../img/star.png) 72px 0px no-repeat,
+              url(../img/star.png) 48px 0px no-repeat;
+}
+.stars__2{
+  background: url(../img/star.png) 96px 0px no-repeat,
+              url(../img/star.png) 72px 0px no-repeat;
+}
+.stars__1{
+  background: url(../img/star.png) 96px 0px no-repeat;
+}
+
+.border{
+  border: 1px solid red;
+}
