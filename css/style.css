@@ -1,0 +1,406 @@
+/* ===== main ===== */
+body{
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000000;
+}
+a{
+  text-decoration: none;
+  font-weight: bold;
+  color: #000000;
+}
+ul{
+  list-style: none;
+  padding: 0;
+}
+h1{
+  font-size: 22px;
+}
+h2{
+  font-size: 22px;
+}
+h3{
+  font-size: 21px;
+}
+button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+button:focus{
+  outline: none;
+}
+.container{
+  width: 1200px;
+  margin: 0 auto;
+}
+.btn{
+  display: inline-block;
+  color: #fff;
+  background-color: #81b3d2;
+  padding: 8px 17px;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* ===== header ===== */
+.main-header{
+  text-align: center;
+  background-image: url(../img/header-bg.jpg);
+  background-repeat: no-repeat;
+}
+.main-header p{
+  margin: 35px 0;
+}
+.header-logo{
+  margin-top: 75px;
+  margin-bottom: 145px;
+}
+.main-navigation{
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.site-navigation{
+  margin: 0;
+  display: flex;
+}
+.site-navigation a{
+  display: inline-block;
+  padding: 20px 70px;
+  font-weight: 700;
+}
+.site-navigation a:hover{
+  color: #81b3d2;
+}
+.site-navigation a:active{
+  color: #b2b2b2;
+}
+.main-header-logo{
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+/* ===== footer ===== */
+.footer{
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+}
+.footer-contacts{
+  margin: 30px 0;
+  margin-left: 120px;
+  text-align: left;
+}
+.footer-contacts p{
+  margin: 0;
+  margin-bottom: 14px;
+}
+.footer-developer{
+  margin-right: 220px;
+}
+
+/* ===== features ===== */
+.features-row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.features-item{
+  margin: 0;
+  width: 400px;
+  height: 255px;
+  background-color: #eeeeee;
+  text-align: center;
+  padding: 30px 0;
+  box-sizing: border-box;
+}
+.features-image{
+  margin: 0;
+  width: 800px;
+  height: 255px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.features-image img{
+  width: 100%;
+}
+
+/* ===== recomendation ===== */
+.recommendation{
+  display: flex;
+}
+.recommendation-list{
+  box-sizing: border-box;
+  text-align: center;
+  padding: 55px 65px;
+}
+
+/* ===== appointment ===== */
+.appointment{
+  position: relative;
+  text-align: center;
+  min-height: 853px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.appointment h2{
+  font-size: 30px;
+}
+.appointment p{
+  position: relative;
+  z-index: 1;
+}
+.appointment-formWrap{
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 160px;
+}
+.map{
+ position: absolute;
+ bottom: 0;
+ left: 0;
+}
+
+/* ===== appointment-form ===== */
+.formWrap{
+  height: 480px;
+  width: 570px;
+  background-color: #ffffff;
+}
+.formHeader{
+  display: block;
+  width: 100%;
+  background-color: #81b3d2;
+  text-align: center;
+  font-style: inherit;
+  text-transform: uppercase;
+  font-size: inherit;
+}
+.formHeader h3{
+  margin: 0;
+  padding: 34px 0;
+  color: #ffffff;
+  font-size: 21px;
+}
+.formHeader:active .formHeader_text{
+  opacity: 0.5;
+}
+.appointment-form{
+  padding: 0 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-weight: bold;
+}
+.appointment-form p{
+  display: flex;
+  align-items: center;
+}
+.appointment-form p:nth-child(-n+2){
+  width: 100%;
+  justify-content: space-between;
+}
+.appointment-form input{
+  font: inherit;
+  border: none;
+}
+.appointment-form input:focus{
+  outline: none;
+}
+.appointment-form input[type="date"]::-webkit-inner-spin-button,
+.appointment-form input[type="date"]::-webkit-calendar-picker-indicator{
+  opacity: 0;
+  /* display: none; */
+}
+.appointment-form input[type="date"]{
+  height: 24px;
+  flex-grow: 0.9;
+  background: url(../img/Calendar.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+  cursor: pointer;
+}
+.appointment-form input[type="number"]{
+  width: 60px;
+  text-align: center;
+}
+.quantity-button{
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+.quantity-button::before{
+  content:'';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 11px;
+  height: 3px;
+  background-color: #a9a9a9;
+}
+.quantity-button_plus::after{
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 11px;
+  background-color: #a9a9a9;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.quantity-button:hover::before,
+.quantity-button:hover::after{
+  background-color: #000;
+}
+.quantity-button:active::before,
+.quantity-button:active::after{
+  background-color: #81b3d2;
+}
+.quantity-button:focus::before,
+.quantity-button:focus::after{
+  background-color: #81b3d2;  
+}
+.mr30{
+  margin-right: 30px;
+}
+.appointment-form input[type='number'] {
+    -moz-appearance:textfield;
+}
+.appointment-form input::-webkit-outer-spin-button,
+.appointment-form input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+/* ===== hotels-filter ===== */
+.hotels-filter{
+  background-color: rgb(139, 139, 250);
+  background-image: url(../img/filter_bg.png);
+  background-size: cover;
+  background-position: 0px -300px;
+  height: 217px;
+  color: #FFF;
+}
+.hotels-serch{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  margin-left: 74px;
+  margin-right: 74px;
+}
+.serch-wrap{
+  margin-right: 110px;
+}
+.filter-wrap{
+  display: flex;
+}
+
+/* ===== checkbox ===== */
+.serch-сheckbox{
+  position: relative;
+  padding: 3px 0;
+  padding-left: 40px;
+  cursor: pointer;
+}
+.serch-сheckbox input[type="checkbox"] + .checkbox-indicator{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 27px;
+  height: 23px;
+  background: url(../img/checkbox-off.png);
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+.serch-сheckbox input[type="checkbox"]:checked + .checkbox-indicator{
+  background: url(../img/checkbox-on.png);
+}
+
+/* ===== hotels-cards ===== */
+.rating{
+  display: inline-block;
+  color: #666666;
+  background-color: #81b3d2;
+  padding: 8px 17px;
+  margin-top: 47px;
+}
+.hotel-card{
+  border-top: 1px solid #e5e5e5;
+}
+.hotel-card:last-child {
+  border-bottom: 1px solid #e5e5e5;
+}
+.hotel-card-wrap{
+  display: flex;
+  margin: 30px 0;
+}
+.description-title{
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+.card-description{
+  margin-left: 30px;
+}
+.card-rating{
+  margin-left: auto;
+}
+.description-cost{
+  margin-left: 39px;
+}
+.description-btn{
+  margin-top: 18px;
+}
+.stars{
+  height: 18px;
+  width: 114px;
+  margin-left: auto;
+}
+.stars__5{
+  background: url(../img/star.png) 96px 0px no-repeat,
+              url(../img/star.png) 72px 0px no-repeat,
+              url(../img/star.png) 48px 0px no-repeat,
+              url(../img/star.png) 24px 0px no-repeat,
+              url(../img/star.png) 0px 0px no-repeat;
+}
+.stars__4{
+  background: url(../img/star.png) 96px 0px no-repeat,
+              url(../img/star.png) 72px 0px no-repeat,
+              url(../img/star.png) 48px 0px no-repeat,
+              url(../img/star.png) 24px 0px no-repeat;
+}
+.stars__3{
+  background: url(../img/star.png) 96px 0px no-repeat,
+              url(../img/star.png) 72px 0px no-repeat,
+              url(../img/star.png) 48px 0px no-repeat;
+}
+.stars__2{
+  background: url(../img/star.png) 96px 0px no-repeat,
+              url(../img/star.png) 72px 0px no-repeat;
+}
+.stars__1{
+  background: url(../img/star.png) 96px 0px no-repeat;
+}
