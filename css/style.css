@@ -233,14 +233,13 @@ input[type="radio"].visually-hidden{
 .appointment-form input[type="date"]::-webkit-inner-spin-button,
 .appointment-form input[type="date"]::-webkit-calendar-picker-indicator{
   opacity: 0;
-  /* display: none; */
 }
 .appointment-form input[type="date"]{
   height: 24px;
   flex-grow: 0.9;
   background: url(../img/Calendar.png);
   background-repeat: no-repeat;
-  background-position: center right;
+  background-position: 99%;
   cursor: pointer;
 }
 .appointment-form input[type="number"]{
@@ -350,6 +349,8 @@ input[type="radio"].visually-hidden{
 }
 .hotel-card{
   border-top: 1px solid #e5e5e5;
+  padding: 0 72px;
+  box-sizing: border-box;
 }
 .hotel-card:last-child {
   border-bottom: 1px solid #e5e5e5;
@@ -403,4 +404,42 @@ input[type="radio"].visually-hidden{
 }
 .stars__1{
   background: url(../img/star.png) 96px 0px no-repeat;
+}
+
+/* ===== hotelSort ===== */
+.hotelSort{
+  display: flex;
+  align-items: center;
+  padding: 0 72px;
+  box-sizing: border-box;
+}
+.hotelSort-by{
+  margin-left: 50px;
+}
+.hotelSort-btn{
+  color: #b1b1b1;
+  margin: 0 15px;
+  border-bottom: 1px dashed #000;
+}
+.hotelSort-btn:hover,
+.hotelSort-btn:focus,
+.hotelSort-btn:active{
+  color: #81b3d2;
+  border: none;
+}
+.hotelSort-arrow{
+  margin-left: auto;
+}
+.hotelSort-arrow-btn{
+  margin-left: 12px;
+  width: 11px;
+  height: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.hotelSort-arrow-btn__up{
+  background-image: url(../img/sortBtnUp.png);
+}
+.hotelSort-arrow-btn__down{
+  background-image: url(../img/sortBtnDown.png);
 }

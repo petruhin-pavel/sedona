@@ -7,7 +7,7 @@ const childrenPlusBtn = document.querySelector("#children-plus");
 const adultsInput = document.querySelector("#adults");
 const childrenInput = document.querySelector("#children");
 
-const sendBtn = document.querySelector(".formHeader");
+
 
 
 adultsMinusBtn.addEventListener("click", function (evt) {
@@ -34,9 +34,4 @@ childrenPlusBtn.addEventListener("click", function (evt) {
   if (childrenInput.value >= 0) {
     childrenInput.value++
   }
-});
-
-sendBtn.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  alert("Данная функция не работает в демо версии сайта.")
 });
